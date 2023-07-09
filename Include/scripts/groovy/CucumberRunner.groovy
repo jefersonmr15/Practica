@@ -25,6 +25,4 @@ import internal.GlobalVariable
 @RunWith(Cucumber.class)
 @CucumberOptions(features="Include/features",glue="",plugin=["pretty", "html:ReportsFolder", "json:ReportsFolder/cucumber.json"])
 public class CucumberRunner {
-	
-
 }
