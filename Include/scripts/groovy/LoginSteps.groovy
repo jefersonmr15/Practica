@@ -16,7 +16,7 @@ class LoginSteps {
 	@When("Se ingresa el usuario y la contraseña para el escenario (.*)")
 	def EnterCredentials(scenario) {
 		def intScenario = scenario as Integer
-		WebUI.setText(findTestObject('User'), findTestData('Login').getValue('Usuario', intScenario))
+		WebUI.setText(findTestObject('User'), findTestData('Login').getValue(1, intScenario))
 		WebUI.setEncryptedText(findTestObject('Pass'), findTestData('Login').getValue(2, intScenario))
 		WebUI.takeScreenshot()
 	}
