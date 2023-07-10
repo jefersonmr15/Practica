@@ -2,16 +2,12 @@ import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
-import cucumber.api.java.AfterStep
 import cucumber.api.java.en.And
 import cucumber.api.java.en.Given
 import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
 
 class LoginSteps {
-	@AfterStep
-	public void afterStep(){
-	}
 	@Given("El usuario navega a la pagina web del login")
 	def navigateToLoginPage() {
 		WebUI.openBrowser('https://www.saucedemo.com/')
