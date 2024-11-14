@@ -5,3 +5,4 @@ WebUI.openBrowser('www.gogole.com')
 
 WebUI.closeBrowser()
 
+WebUI.closeBrowser()
